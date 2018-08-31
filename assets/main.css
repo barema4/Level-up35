@@ -1,0 +1,116 @@
+
+topnav {
+    overflow: hidden;
+    background-color:black;
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: DodgerBlue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+h1{
+text-align: center;
+font-size: 25PX;
+color: blue;
+
+}
+
+
+form.login-form{
+	padding: 10px;
+	float: right;
+	border-radius: 3px;
+	color: blue;
+}
+
+
+form.login-form p{
+	font-size: 25px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	
+	
+}
+div.form-wrap input#field{
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 15px 0px 15px 5px;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+div.form-wrap button{
+	width: 100%;
+	margin-top: 30px;
+	padding: 10px 5px 10px 5px;
+	border-radius: 5px;
+	border: none;
+	color: gray;
+	background-color: #ABEBC6;
+}
+body{
+
+	background-color:#d9d9d9;
+	padding:50px;
+}
+#sam{
+	padding: 10px;
+	height: 50px;
+	width: 800px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: rgb(106, 90, 205);
+  }
+
+  .login-form{
+  	width:300px;
+  }
+  .login{
+  	width: 250px;
+  	height: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topnav a {
+        float: none;
+        width: 100%;
+    }
+
+
+  body {
+    background-color: green;
+  }
+
+  .login-form{
+  	width:200px;
+  }
+  #image1{
+  	width: 200px;
+  	height: 150px;
+  }
+  #sam{
+  	padding: 10px;
+  	width: 9px;
+  	font-size: 12
+  }
+  .login{
+  	width: 150px;
+  	height: 150px;
+  }
+}
+
