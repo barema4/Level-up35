@@ -19,8 +19,12 @@ def check_vip(name):
         y = person.lower()
         if x in y:
             j.append(person)
-            j.append("vip")
-    return j   
+           
+    if len(j) == 0:
+        return "Not registered"
+
+    j.append("vip")
+    return j
    
     
 
@@ -31,7 +35,9 @@ def check_ord(name):
         y = person.lower()
         if x in y:
             j.append(person)
-            j.append("ordinary")
+    if len(j) == 0:
+        return "Not registered"
+    j.append("ordinary")        
     return j 
 y.close()
 x.close()
