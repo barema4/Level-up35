@@ -1,9 +1,9 @@
 
-y = open("vip_list.txt", 'r')
-vipList = y.readlines()
+file1 = open("vip_list.txt", 'r')
+vipList = file1.readlines()
 
-x = open("ordinary_list.txt", 'r')
-ordList = x.readlines()
+file2 = open("ordinary_list.txt", 'r')
+ordList = file2.readlines()
 vip_list = []
 ordinary_list = []
 for name in vipList:
@@ -39,5 +39,5 @@ def check_ord(name):
         return "Not registered"
     j.append("ordinary")        
     return j 
-y.close()
-x.close()
+file1.close()
+file2.close()
