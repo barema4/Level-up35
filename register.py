@@ -12,6 +12,12 @@ class Registration:
         self.data[username] = username
         self.data[password] = password
         return self.data[username], self.data[password]
+
+    def add_address(self, email,telephone_number):
+        self.data[email] = email
+        self.data[telephone_number] = telephone_number
+        return self.data[email], self.data[telephone_number]
+
     
 
     

@@ -31,3 +31,8 @@ class RegistrationTestCase(unittest.TestCase):
         self.f = self.app.add_credentials("barema4", "12355")
         self.assertEqual(self.f, ('barema4', '12355'))
     
+
+    def test_contact(self):
+        self.address = self.app.add_address("samrubarema6@gmail.com", "+256786666349")
+        self.assertEqual(self.address, ('samrubarema6@gmail.com', '+256786666349'))
+    
