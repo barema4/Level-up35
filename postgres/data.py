@@ -26,7 +26,7 @@ class DatabaseConnection():
 
 def insert_user(self, first_name,last_name,email, password,sex):
         
-        self.cursor.execute("SELECT * FROM User WHERE email = %s", [email])
+        self.cursor.execute("SELECT * FROM Users WHERE email = %s", [email])
         check_email = self.cursor.fetchone()
     
         if check_email:
