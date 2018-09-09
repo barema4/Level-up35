@@ -65,7 +65,7 @@ class UserDetails(MethodView):
             return jsonify({"user": user_list})
 
         user = DatabaseConnection()
-        user_list = user_id.get_single_user(user_id)
+        user_list = user.get_single_user(user_id)
         if user_list == "Not one":
             return jsonify({"user":user_list}), 404
         return jsonify({"user": user_list})
